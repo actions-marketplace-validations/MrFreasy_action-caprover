@@ -1,14 +1,14 @@
-name: 'CapRover App Deploy'
+name: 'CapRover deploy with Token'
 description: 'Deploy application to CapRover server'
 branding:
-  icon: 'caprover.svg'
+  icon: 'arrow-down-circle'
   color: orange
 inputs:
   host:
     description: 'CapRover machine url i.e., https://captain.your-domain.com'
     required: true
-  password:
-    description: 'CapRover admin password. Use secret for more security'
+  token:
+    description: 'CapRover application token. Use secret for more security'
     required: true
   app:
     description: 'App name on CapRover server'

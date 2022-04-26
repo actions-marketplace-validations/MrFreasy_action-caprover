@@ -2,7 +2,7 @@
 
 if [ x$INPUT_IMAGE != x ]
 then
-  caprover deploy -h $INPUT_HOST -p $INPUT_PASSWORD -a $INPUT_APP -i $INPUT_IMAGE
+  caprover deploy --caproverUrl $INPUT_HOST --appToken $INPUT_TOKEN --imageName $INPUT_IMAGE --appName $INPUT_APP
 else
-  caprover deploy -h $INPUT_HOST -p $INPUT_PASSWORD -a $INPUT_APP -b $INPUT_BRANCH
+  caprover deploy --caproverUrl $INPUT_HOST --appToken $INPUT_TOKEN --appName $INPUT_APP --branch $INPUT_BRANCH
 fi

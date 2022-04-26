@@ -9,9 +9,9 @@ Action to deploy application to CapRover server
 
 CapRover machine url i.e., https://captain.your-domain.com
 
-### `password`: required
+### `token`: required
 
-CapRover admin password. Use secret for more security
+CapRover application token. Use secret for more security
 
 ### `app`: required
 
@@ -31,10 +31,10 @@ Image to be deployed. It should either exist on server, or it has to be public, 
 ## Usage
 
 ```
-uses: floms/action-caprover@v1
+uses: mrfreasy/action-caprover@v2
 with:
   host: 'https://captain.your-domain.com'
-  password: '${{ secrets.CAPROVER_PASSWORD }}'
+  token: '${{ secrets.CAPROVER_TOKEN }}'
   app: 'my-app'
   image: 'YOUR-DOCKER-IMAGE-NAME'
 
